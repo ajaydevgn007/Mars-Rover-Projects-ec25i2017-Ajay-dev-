@@ -1,15 +1,17 @@
-# Multi-LED Blinking System (Using millis)
+# RGB LED Control with Potentiometer
 
 ## Overview
 
-A system that controls multiple LEDs to blink at different time intervals simultaneously using non-blocking timing.
+A system that controls the color of an RGB LED using a potentiometer, along with a blinking LED whose speed varies based on input.
 
 ---
 
 ## Components
 
 * Arduino
-* 3 LEDs
+* RGB LED
+* Potentiometer
+* LED
 * Resistors
 * Connecting Wires
 * Power Supply
@@ -18,27 +20,28 @@ A system that controls multiple LEDs to blink at different time intervals simult
 
 ## Features
 
-* Independent blinking of multiple LEDs
-* Uses `millis()` (non-blocking timing)
-* No delay used → efficient execution
-* Simultaneous operation of LEDs
+* Smooth RGB color transition using potentiometer
+* Dynamic color mixing (Red → Green → Blue)
+* Adjustable blinking speed based on input
+* Uses PWM for brightness control
+* Non-blocking timing using `millis()`
 
 ---
 
 ## Working
 
-1. Each LED is assigned a different time interval
-2. The program continuously checks elapsed time using `millis()`
-3. When the set interval is reached, the corresponding LED toggles
-4. All LEDs operate independently without affecting each other
-5. This allows multiple LEDs to blink at different speeds simultaneously
+1. The potentiometer value is read using analog input
+2. Based on the value, RGB components are calculated
+3. Colors smoothly transition between Red, Green, and Blue
+4. The RGB LED displays the mixed color using PWM
+5. The potentiometer also controls blinking speed of another LED
+6. The LED toggles based on time calculated using `millis()`
 
 ---
 
 ## Challenges Faced & Solutions
 
-* **Simultaneous control issue** → Solved using separate timers for each LED
-* **Delay blocking problem** → Replaced `delay()` with `millis()`
+* **Smooth color transition** → Solved using mapping of analog values to RGB ranges
+* **Simultaneous control** → Used `millis()` for non-blocking blinking
 
 ---
-
