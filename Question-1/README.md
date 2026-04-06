@@ -41,3 +41,4 @@ A system that controls multiple LEDs to blink at different time intervals simult
 * **Delay blocking problem** → Replaced `delay()` with `millis()`
 
 ---
+## Tinkercad link:https://www.tinkercad.com/things/aoE4SUe56tp-multiple-leds-blinking-at-different-time-periods?sharecode=tEhggJhcCQZudVn7VcNmO000GvuYk4gGKoOOLOkHVpk
