@@ -52,4 +52,4 @@ A password-based locking system using a keypad and servo motor, where access is 
 * **Input reset issue** → Fixed using clear (`#`) and confirm (`*`) keys
 
 ---
-
+## Tinkercad Link:https://www.tinkercad.com/things/e08lCr23k58-smart-servo-password-lock?sharecode=lMhMqWLbj3Ca0Ku0nzrowmh83xxTqfBjpcd7zqlbXL4
