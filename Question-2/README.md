@@ -45,3 +45,4 @@ A system that controls the color of an RGB LED using a potentiometer, along with
 * **Simultaneous control** → Used `millis()` for non-blocking blinking
 
 ---
+## Tinkercad link:https://www.tinkercad.com/things/0OkpWLC4Mz9-controlling-blinking-speed-and-colour-of-led-using-potentiometer?sharecode=x2pFxD1iC2qlGkM7Z6fkIPzAvyj0Yv-X66H99pRSZOw
